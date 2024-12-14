@@ -1,0 +1,117 @@
+/**Quando eu quero estilazar um elemento pelo nome eu simplesmente coloco o nome do elemento igual realizamos abaixo, estilizando a cor de fundo da tela nosso elemento body**/
+
+body{
+    /**Definir a cor de fundo de um elemento, no nosso caso é a cor de fundo da tela**/
+    background-color: #4d86a6;
+}
+menu{
+    background-color:#8fbbd3;
+    padding: 10px;/**Adiciona espaço ao redor do conteudo do menu**/
+    text-align: center;/**Alinhamento do texto**/
+    display: flex;/**usa um layout flexivel para alinhar os elementos**/
+    justify-content: center;/**alinha elementos horizontalmente**/
+    gap: 2rem;/**define a distancia entre os elemnentos**/
+    /**alteraçoes aula 26/10*/
+    height: 80px;
+    width: 100%;
+    position: fixed;/*fixa o elemento na tela*/
+    z-index: 2;/*faz com que o elemento fique por cima dos outros*/
+    margin-top: 0;/*posiciona o elemento à uma distancia de 0px da extremidade da pagina*/
+}
+/**alteraçoes aula 26/10*/
+#titulo0{
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+/**Estilizando o elemento pela classe com o caracter antes do nome da classe**/
+.menu-itens{
+    color: #5b34b6; /**define cor do elememto**/
+    text-decoration: none;/**retira trao de link da palravra**/
+    padding: 10px 20px;
+    font-size: 18px;/**define o tamanho do texto**/
+    display: inline-block;/**deixa o item como bloco em uma linha**/
+}
+/**hover é um evento de mouse que ocorre uma ação toda vez que colocamos o mouse em cima do elemento. Abaixo aplicamos um evento de mouse no nosso menu**/
+.menu:hover{
+    /*quando colocarmos o mouse sob o elemento iremos*/
+    background-color:#364e3c ; /*trocar a cor de */
+    color:  #D3D3D3;
+    width: 220px;
+    padding: 15px 25px;
+    border-radius: 8px;
+
+}
+.caixa1{
+    background-color: #00547a;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 15px;
+}
+.carrousel-inner{
+    position: relative;/*ao mover o elemento, ele não interfere nos outros elementos ao seu redor*/
+}
+.carrousel-control-prev, .carrousel-control-next{
+    position: absolute;/*posicionna um elemento em relação ap elemento pai mais prox*/
+    top: 50%;/*posiciona a 50% da altura do elemento filho*/
+    transform: translateY(-50%);/**/
+    width: 5%;/*ajuste da largura das setas*/
+    z-index: 1;/*garante que fiquem sobre a imagem*/
+    background-color: rgb(0, 0, 0, 0.5);
+
+}
+/*alteracao aula 26/10*/
+footer{
+    background-color: #251b37;
+    height: 50px;
+    color: aliceblue;
+    justify-items: center;
+    padding-top: 1%;
+    margin-bottom: 0%;
+}
+/*alteracao aula 09/11*/
+footer{
+    background-color: #120236;
+    height: 50px;
+    color: rgb(202, 220, 236);
+    justify-items: center;
+    padding-top: 1%;
+    margin-bottom: 0%;
+}
+section{
+    /*Estilizando a fonte do texto que esta dentro da section */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*o desing abaixo refere se a estilizacao da tabaela,porem devido  as estilizacoes de seus elementos thead e tbody ela acabou ficando obsoleta, não aparece na pagina*/
+table{
+    border: 1px dashed;/*cria uma borda de 1px de altura dashed e a borda do tipo pontilhada*/
+    border-color: #ff005b;/*cor da borda*/
+}
+thead{
+    background-color: #ff7d10;/*cor de fundo*/
+    color: #ffb238;/*cor do texto*/
+    height: 15px;
+}
+th{ /*estiliza cada celula do cabecalho*/
+    width: 150px;
+    text-align: center;/*alinhamento vertical do texto*/
+    align-items: center;
+    border: white;/*cor da borda*/
+}
+tbody{
+    background-color: navy;
+}
+td{
+    text-align: center;
+    border:#ff005b solid;
+}
+.carrosselCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}

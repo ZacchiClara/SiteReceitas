@@ -1,0 +1,86 @@
+/**Quando eu quero estilazar um elemento pelo nome eu simplesmente coloco o nome do elemento igual realizamos abaixo, estilizando a cor de fundo da tela nosso elemento body**/
+
+body{
+    /**Definir a cor de fundo de um elemento, no nosso caso é a cor de fundo da tela**/
+    background-color:#7baa94;
+   
+}
+menu{
+    background-color:#28684d ;
+    padding: 10px;/**Adiciona espaço ao redor do conteudo do menu**/
+    text-align: center;/**Alinhamento do texto**/
+    display: flex;/**usa um layout flexivel para alinhar os elementos**/
+    justify-content: center;/**alinha elementos horizontalmente**/
+    gap: 2rem;/**define a distancia entre os elemnentos**/
+    /**alteraçoes aula 26/10*/
+    height: 80px;
+    width: 100%;
+    position: fixed;/*fixa o elemento na tela*/
+    z-index: 2;/*faz com que o elemento fique por cima dos outros*/
+    margin-top: -5%;/*posiciona o elemento à uma distancia de 0px da extremidade da pagina*/
+}
+.fixed{
+    position: fixed; /*faz com que o menu fique fixo no topo da pagina*/
+    top: 0px; /*define a posição do menu como 0px do topo*/
+    left: 0;/*alinha o menu a borda esquerda*/
+    right: 0;/*alinha o menu a borda direita*/
+    box-sizing: 0 4px 6px rgba(0,0,0,0.1);/*adiciona uma sombra para diferenciar o menu*/
+}
+/**alteraçoes aula 26/10*/
+#titulo1{
+    margin-top: 5%;
+    margin-left: 2%;
+}
+/**Estilizando o elemento pela classe com o caracter antes do nome da classe**/
+.menu-itens{
+    color:black ; /**define cor do elememto**/
+    text-decoration: none;/**retira trao de link da palravra**/
+    padding: 10px 20px;
+    font-size: 18px;/**define o tamanho do texto**/
+    display: inline-block;/**deixa o item como bloco em uma linha**/
+}
+/**hover é um evento de mouse que ocorre uma ação toda vez que colocamos o mouse em cima do elemento. Abaixo aplicamos um evento de mouse no nosso menu**/
+.menu:hover{
+    /*quando colocarmos o mouse sob o elemento iremos*/
+    background-color:#359772; /*trocar a cor de */
+    color:rgb(0, 121, 94) ;
+    width: 220px;
+    padding: 15px 25px;
+    border-radius: 8px;
+
+}
+.caixa1{
+    background-color:#474e48;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 15px;
+}
+.carrousel-control-prev, .carrousel-control-next{
+    position: absolute;/*posicionna um elemento em relação ap elemento pai mais prox*/
+    top: 50%;/*posiciona a 50% da altura do elemento filho*/
+    transform: translateY(-50%);/**/
+    width: 5%;/*ajuste da largura das setas*/
+    z-index: 1;/*garante que fiquem sobre a imagem*/
+    background-color: rgb(0, 0, 0, 0.5);
+
+}
+/*alteracao aula 26/10*/
+footer{
+    background-color: #76ac7f;
+    height: 50px;
+    color:black ;
+    justify-items: center;
+    padding-top: 1%;
+    margin-bottom: 0%;
+}
+tr,td{
+    border:1px solid black;
+    color:white;
+    font-size: 12px;
+}
+#cabecalho{
+    background-color: #37795a;
+}
